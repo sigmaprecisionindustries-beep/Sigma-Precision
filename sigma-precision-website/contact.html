@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact &amp; Request a Quote | Sigma Precision Industries</title>
+<meta name="description" content="Contact Sigma Precision Industries, Bhosari MIDC, Pune. Request a quote for CNC and VMC machining.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%99%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap nav">
+<a href="index.html" class="logo" aria-label="Sigma Precision Industries">
+<svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#ff6600" stroke-width="2.4" stroke-linejoin="round"><path d="M24 6H8l9 11-9 11h18"/><path d="M17 1v6M15 1h4" stroke-width="2"/></svg>
+<span>SIGMA<small>PRECISION INDUSTRIES</small></span></a>
+<button class="menu" aria-expanded="false" aria-controls="nav" onclick="var n=document.getElementById('nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">Menu</button>
+<nav id="nav"><ul><li><a href="index.html">Home</a></li><li><a href="capabilities.html">Capabilities</a></li><li><a href="quality.html">Quality &amp; Certifications</a></li><li><a href="industries.html">Industries &amp; Clients</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul></nav>
+<a class="btn hide-m" href="tel:+919607188456">Call Now</a>
+</div></header>
+<main>
+<section id="contact"><div class="wrap">
+<h2>Contact Us</h2>
+<div class="two">
+<div>
+<div class="scroll"><table class="tbl">
+<tr><th>Address</th><td>S Block, behind Ganesh Wajan Kata, MIDC, Bhosari, Pune, Pimpri-Chinchwad, Maharashtra 411026</td></tr>
+<tr><th>Contact</th><td>Samit Tukol / Praveen Muttin</td></tr>
+<tr><th>Mobile</th><td><a href="tel:+919607188456">+91 9607188456</a><br><a href="tel:+919538906668">+91 9538906668</a><br><a href="tel:+919960366330">+91 9960366330</a></td></tr>
+<tr><th>Email</th><td><a href="mailto:sigmaprecisionindustries@gmail.com">sigmaprecisionindustries@gmail.com</a></td></tr>
+<tr><th>Udyam</th><td>UDYAM-MH-26-1103653</td></tr>
+</table></div></div>
+<form id="qf">
+<div class="row"><div><label for="n">Name</label><input id="n" required></div><div><label for="c">Company</label><input id="c"></div></div>
+<div class="row"><div><label for="e">Email</label><input id="e" type="email" required></div><div><label for="p">Phone</label><input id="p" type="tel"></div></div>
+<div><label for="m">Message</label><textarea id="m" rows="4" required></textarea></div>
+<div><label for="f">Drawing (placeholder)</label><input id="f" type="file" disabled></div>
+<button class="btn" type="submit">Send enquiry</button>
+<p class="note" id="s">Sending opens your email app with the enquiry filled in. Email drawings as attachments.</p>
+</form>
+</div>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 Sigma Precision Industries, S Block, behind Ganesh Wajan Kata, MIDC, Bhosari, Pune 411026 · GST 27AGKPT4875A1Z3 · Udyam UDYAM-MH-26-1103653</div></footer>
+<script>
+var qf=document.getElementById('qf');if(qf)qf.addEventListener('submit',function(ev){
+ev.preventDefault();
+var v=function(i){return document.getElementById(i).value};
+var body='Name: '+v('n')+'\nCompany: '+v('c')+'\nEmail: '+v('e')+'\nPhone: '+v('p')+'\n\n'+v('m');
+location.href='mailto:sigmaprecisionindustries@gmail.com?subject='+encodeURIComponent('Quote enquiry from '+v('n'))+'&body='+encodeURIComponent(body);
+document.getElementById('s').textContent='Opening your email app. If nothing opens, email us directly.';
+});
+document.querySelectorAll('nav a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('nav').classList.remove('open')})});
+</script>
+</body>
+</html>
