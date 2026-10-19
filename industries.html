@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Industries &amp; Clients | Sigma Precision Industries</title>
+<meta name="description" content="Automotive, EV, hydraulics, mould and die, fixture and general engineering machining in the Pune-Chakan corridor.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%99%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap nav">
+<a href="index.html" class="logo" aria-label="Sigma Precision Industries">
+<svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#ff6600" stroke-width="2.4" stroke-linejoin="round"><path d="M24 6H8l9 11-9 11h18"/><path d="M17 1v6M15 1h4" stroke-width="2"/></svg>
+<span>SIGMA<small>PRECISION INDUSTRIES</small></span></a>
+<button class="menu" aria-expanded="false" aria-controls="nav" onclick="var n=document.getElementById('nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">Menu</button>
+<nav id="nav"><ul><li><a href="index.html">Home</a></li><li><a href="capabilities.html">Capabilities</a></li><li><a href="quality.html">Quality &amp; Certifications</a></li><li><a href="industries.html" aria-current="page">Industries &amp; Clients</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+<a class="btn hide-m" href="tel:+919607188456">Call Now</a>
+</div></header>
+<main>
+<section id="industries"><div class="wrap">
+<h2>Industries We Serve</h2>
+<p class="lead">Positioned for the Bhosari MIDC and Pune-Chakan-Talegaon manufacturing corridor.</p>
+<div class="grid">
+<div class="card"><h3>Automotive &amp; Auto Ancillary</h3><p>Engine brackets, transmission parts, steering knuckles, housings, flanges.</p></div>
+<div class="card"><h3>Electric Vehicle</h3><p>Battery housings, motor casings, high-speed aluminium machining.</p></div>
+<div class="card"><h3>General Engineering</h3><p>Pump bodies, valve components, flanges, shafts and bushes.</p></div>
+<div class="card"><h3>Hydraulics &amp; Fluid Power</h3><p>Manifold blocks, valve housings, cylinder bodies.</p></div>
+<div class="card"><h3>Mould &amp; Die</h3><p>Cavity and core inserts, electrode blanks.</p></div>
+<div class="card"><h3>Fixture &amp; Tool Room</h3><p>Jig plates, fixture bodies, setting gauges.</p></div>
+</div>
+
+<h2 style="margin-top:56px">Why Choose Sigma Precision</h2>
+<div class="grid">
+<div class="card"><h3>Under one roof</h3><p>VMC milling, turning and radial drilling in one Bhosari MIDC workshop, with three VMCs for parallel capacity.</p></div>
+<div class="card"><h3>Strategic location</h3><p>Close to Chakan, Talegaon and Pimpri-Chinchwad industrial areas.</p></div>
+<div class="card"><h3>Compliant and documented</h3><p>GST invoices, delivery challans and job cards. Inspection reports on request. Written quotation before every job.</p></div>
+<div class="card"><h3>2-hour response</h3><p>Calls and messages answered within 2 hours during working hours.</p></div>
+</div>
+</div></section>
+
+<section id="clients"><div class="wrap">
+<h2>Clients Served</h2>
+<p class="lead">Companies that trust Sigma Precision Industries with their machining work.</p>
+<div class="grid">
+<div class="card"><h3>Essem Metaltech</h3></div>
+<div class="card"><h3>S.V. Aluext Profile Pvt. Ltd.</h3></div>
+<div class="card"><h3>Autoline</h3></div>
+</div>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 Sigma Precision Industries, S Block, behind Ganesh Wajan Kata, MIDC, Bhosari, Pune 411026 · GST 27AGKPT4875A1Z3 · Udyam UDYAM-MH-26-1103653</div></footer>
+<script>
+var qf=document.getElementById('qf');if(qf)qf.addEventListener('submit',function(ev){
+ev.preventDefault();
+var v=function(i){return document.getElementById(i).value};
+var body='Name: '+v('n')+'\nCompany: '+v('c')+'\nEmail: '+v('e')+'\nPhone: '+v('p')+'\n\n'+v('m');
+location.href='mailto:sigmaprecisionindustries@gmail.com?subject='+encodeURIComponent('Quote enquiry from '+v('n'))+'&body='+encodeURIComponent(body);
+document.getElementById('s').textContent='Opening your email app. If nothing opens, email us directly.';
+});
+document.querySelectorAll('nav a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('nav').classList.remove('open')})});
+</script>
+</body>
+</html>
